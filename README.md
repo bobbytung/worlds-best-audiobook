@@ -2,7 +2,7 @@
 
 Audiobook player + sample content
 
-[Live demo](https://marisademeglio.github.io/worlds-best-audiobook/web/library/)
+[Live demo](https://bobbytung.github.io/worlds-best-audiobook/web/library/)
 
 ## Scope
 
