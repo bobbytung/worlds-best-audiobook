@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Audiobook Player</title>
+        <title>有聲書播放器</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <link rel="stylesheet" href="css/base.css"/>
@@ -20,8 +20,8 @@
             
             <nav aria-label="player navigation">
                 <ul>
-                    <li><a href="../library">Library</a></li>
-                    <li><a href="settings.html" id="settingsLink">Settings</a></li>
+                    <li><a href="../library">首頁</a></li>
+                    <li><a href="settings.html" id="settingsLink">設定</a></li>
                 </ul>
             </nav>
         
@@ -34,13 +34,13 @@
         </main>
         <nav id="player-toc" aria-live="polite" aria-label="book navigation">
             <details open>
-                <summary>Table of Contents</summary>
+                <summary>目錄</summary>
                 <div></div>
             </details>
         </nav>
         <aside id="bookmarks" aria-live="polite">
             <details open>
-                <summary>Bookmarks</summary>
+                <summary>書籤</summary>
                 <nav aria-label="Bookmarks">
                 </nav>
             </details>
@@ -48,7 +48,7 @@
         <footer id="controls" aria-live="polite" aria-label="playback controls">
             <div id="adjust">
                 <div id="volume-wrapper" class="slider">
-                    <label for="volume">Volume</label>
+                    <label for="volume">音量</label>
                     <input id="volume" type="range" min="0" max="100">
                     <span id="volume-value"></span>
                     <button aria-label="Mute" id="mute" title="Mute">
@@ -60,11 +60,11 @@
                 </div>
 
                 <div id="rate-wrapper" class="slider">
-                    <label for="rate">Rate</label>
+                    <label for="rate">倍速</label>
                     <input id="rate" type="range" min="50" max="200">
                     <span id="rate-value"></span>
                     <button id="reset-rate">
-                        Reset
+                        重設
                     </button>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                 
             </div>
             <p id="chapter-progress" aria-live="polite">
-                <span class="label">Chapter progress:</span> <span id="current-position">--</span>
+                <span class="label">章節進度：</span> <span id="current-position">--</span>
             </p>
             
         </footer>

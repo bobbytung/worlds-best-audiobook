@@ -142,13 +142,13 @@ async function loadBookData() {
         tdTitle.textContent = pub.title;
         let tdClearLastRead = document.createElement('td');
         let buttonClearLastRead = document.createElement('button');
-        buttonClearLastRead.textContent = "Clear last-read";
+        buttonClearLastRead.textContent = "清除最後位置";
         buttonClearLastRead.addEventListener('click', e=>clearLastRead(pub.pubid));
         tdClearLastRead.appendChild(buttonClearLastRead);
 
         let tdClearBmks = document.createElement('td');
         let buttonClearBmks = document.createElement('button');
-        buttonClearBmks.textContent = "Clear bookmarks"
+        buttonClearBmks.textContent = "清除書籤"
         buttonClearBmks.addEventListener('click', e=>clearBookmarks(pub.pubid));
         tdClearBmks.appendChild(buttonClearBmks);
 

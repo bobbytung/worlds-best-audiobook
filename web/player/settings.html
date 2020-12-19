@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Audiobook Player Settings</title>
+        <title>有聲書播放器設定</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <link rel="stylesheet" href="css/base.css"/>
@@ -12,47 +12,47 @@
     </head>
     <body>
         <header>
-            <h1>Settings</h1>
-            <p><a href="../player" id="playerLink">Back to player</a></p>
+            <h1>設定</h1>
+            <p><a href="../player" id="playerLink">回到播放器</a></p>
         </header>
         <main>
-            <h2>Text</h2>
+            <h2>文字</h2>
             <div id="text-settings">
                 <div>
-                    <h3>Font size</h3>
+                    <h3>字級</h3>
                     <select name="fontsize">
-                        <option value="x-small">X-Small</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="x-large">X-Large</option>
-                        <option value="xx-large">XX-Large</option>
-                        <option value="xxx-large">XXX-Large</option>
+                        <option value="x-small">更小</option>
+                        <option value="small">小</option>
+                        <option value="medium">適中</option>
+                        <option value="large">大</option>
+                        <option value="x-large">更大</option>
+                        <option value="xx-large">超級大</option>
+                        <option value="xxx-large">最大</option>
                     </select> 
                     <br>
-                    <button id="reset-fontsize">Reset fontsize</button>
+                    <button id="reset-fontsize">重設字級</button>
 
-                    <h3>Highlight</h3>
+                    <h3>朗讀強調</h3>
                     <input type="checkbox" id="use-custom-highlight">
-                    <label for="use-custom-highlight">Use my highlight settings</label>
+                    <label for="use-custom-highlight">使用我的強調設定</label>
                     <div id="custom-highlight">
                         <fieldset>
                             <div>
                                 <input type="color" id="hl" name="highlight">
-                                <label for="highlight">Highlighted text color</label>
+                                <label for="highlight">文字</label>
                             </div>
                             
                             <div>
                                 <input type="color" id="hlbk" name="highlight-bk">
-                                <label for="highlight-bk">Highlighted text background</label>
+                                <label for="highlight-bk">背景</label>
                             </div>
                             
-                            <button id="reset-highlight">Reset highlight</button>
+                            <button id="reset-highlight">重設強調色彩</button>
                         </fieldset>
                         <p id="sample-text">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
-                            <span class="highlight">Ratione nisi, consequuntur saepe animi eum alias vero dolorem. </span>
-                            <span>Assumenda cum deserunt labore pariatur ut obcaecati, optio minima qui ducimus fuga laudantium?</span>
+                            <span>我從鄉下跑到京城裏，一轉眼已<br />經六年了。</span>
+                            <span class="highlight">其間耳聞目睹的所謂<br />國家大事，算起來也很不少；</span>
+                            <span>但<br />在我心裏，都不留什麼痕跡，倘<br />要我尋出這些事的影響來說，便<br />只是增長了我的壞脾氣，</span>
                         </p>
 
                     </div>
@@ -61,13 +61,13 @@
                 
             </div>
 
-            <h2>Data</h2>
-            <p>Bookmarks and last-read positions</p>
+            <h2>資料</h2>
+            <p>書籤與最後閱讀位置</p>
             <table id="publications">
                 <tbody>
                 </tbody>
             </table>
-            <button id="clearall">Clear all data</button> 
+            <button id="clearall">清除所有資料</button> 
             <p id="status" aria-live="polite"></p>
             
         </main>
