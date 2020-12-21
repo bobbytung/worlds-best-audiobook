@@ -6,4 +6,4 @@
 
 # 內容
 
-摘自台灣數位出版聯盟[有聲書範本](https://github.com/bobbytung/Audiobooks)之Case 1。
+摘自台灣數位出版聯盟[有聲書範本](https://github.com/dpublishing/audiobooks-samples)之Case 1。
